@@ -190,9 +190,13 @@ input:hover, input:focus {
 }
 
 input:invalid{
+    border-color: red;
+}
+/*
+input:invalid{
     border: 1px solid red;
 }
-
+*/
 input:valid {
     border: solid 2px rgba(30, 144, 255, 0.5);
 }
