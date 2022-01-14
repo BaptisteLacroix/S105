@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Baptiste Lacroix & Thomas Gorisse">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>HomeTech</title>
+</head>
+
+<body>
+<main>
+    <div class="bandeau-left">
+        <img id="logo" src="./img/logo.png" alt="logo">
+    </div>
+    <div class="bandeau-right">
+        <div id="content">
+            <div id="center-title">
+                <div id="cadre">
+                    <div></div>
+                    <h1>ETUDE DE MARCH&#201; DES PRESTATIONS DE MAINTENANCE INFORMATIQUE A DOMICILE</h1>
+                    <div></div>
+                </div>
+
+                <form>
+                    <div class="formulaire">
+                        <h2>Informations Utiles</h2>
+                        <fieldset class="f2">
+                            <div class="left">
+                                <label>
+                                    Prénom <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <input type="text" placeholder="Saisir prénom" required>
+                                </label>
+                                <label>
+                                    <br>
+                                    Nom <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <input type="text" placeholder="Saisir nom" required>
+                                </label>
+
+                                <label>
+                                    <br>
+                                    Numéro de téléphone <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <input type="tel"
+                                           pattern="^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$"
+                                           placeholder="Saisir numéro de téléphone" required>
+                                </label>
+
+                                <label>
+                                    <br>
+                                    Adresse <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <input type="text" placeholder="Saisir adresse" required>
+                                </label>
+                            </div>
+                            <div class="right">
+
+                                <label>
+                                    Adresse Mail <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <input type="email" placeholder="Saisir adresse mail" required>
+                                </label>
+
+                                <label>
+                                    <br>
+                                    Code Postal <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <!-- <input type="number" maxlength="5" placeholder="Saisir code postal" required> -->
+                                    <input type="text" pattern="\d{5}"  placeholder="Saisir code postal" required>
+                                </label>
+
+                                <label>
+                                    <br>
+                                    Ville <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <input type="text" placeholder="Saisir ville" required>
+                                </label>
+
+                                <label>
+                                    <br>
+                                    Date de saisie <abbr title="Réponse Obligatoire">*</abbr>
+                                    <br>
+                                    <input type="date" required>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <h2>Questions 1 à 5</h2>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Quel âge avez-vous ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="age1" name="Age" value="age1" required>
+                                        <label for="age1" class="filter-label">20 - 29 ans</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="age2" name="Age" value="age2">
+                                        <label for="age2" class="filter-label">30 - 39 ans</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="age3" name="Age" value="age3">
+                                        <label for="age3" class="filter-label">40 - 49 ans</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="age4" name="Age" value="age4">
+                                        <label for="age4" class="filter-label">50 - 59 ans</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="age5" name="Age" value="age5">
+                                        <label for="age5" class="filter-label">60 - 79 ans</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="age6" name="Age" value="age6">
+                                        <label for="age6" class="filter-label">80 ans et plus</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Votre Situation
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="CadreT" name="Situtation" value="CadreT" required>
+                                        <label for="CadreT" class="filter-label">Cadre</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Employe" name="Situtation" value="Employe">
+                                        <label for="Employe" class="filter-label">Employé</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Ouvrier" name="Situtation" value="Ouvrier">
+                                        <label for="Ouvrier" class="filter-label">Ouvrier</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Artisan" name="Situtation" value="Artisan">
+                                        <label for="Artisan" class="filter-label">Artisan</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="Commercant" name="Situtation" value="Commercant">
+                                        <label for="Commercant" class="filter-label">Commerçant</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="ProfessionLiberale" name="Situtation"
+                                               value="ProfessionLiberale">
+                                        <label for="ProfessionLiberale" class="filter-label">Profession Libérale</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Retraite" name="Situtation" value="Retraite">
+                                        <label for="Retraite" class="filter-label">Retraité</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="SansEmploi" name="Situtation" value="SansEmploi">
+                                        <label for="SansEmploi" class="filter-label">Sans Emploi</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Quel appareil utilisez-vous principalement ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li><input type="radio" id="Ordinateur" name="Appareil" value="Ordinateur"
+                                               required>
+                                        <label for="Ordinateur" class="filter-label">Ordinateur fixe / portable</label>
+                                    </li>
+                                    <li><input type="radio" id="TabletteTactile" name="Appareil"
+                                               value="TabletteTactile">
+                                        <label for="TabletteTactile" class="filter-label">Tablette tactile</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="Imprimante" name="Appareil" value="Imprimante">
+                                        <label for="Imprimante" class="filter-label">Imprimante</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Aucun" name="Appareil" value="Aucun">
+                                        <label for="Aucun" class="filter-label">Aucun de ces appareils</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.creatests.com/questionnaires/apercu/index.php?N=1796&apercu=1"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Comment jugez-vous votre niveau de compétence en réparation informatique ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li><input type="radio" id="inexperimente" name="Reparation"
+                                               value="inexperimente" required>
+                                        <label for="inexperimente" class="filter-label">Totalement inexpérimenté(e)</label>
+                                    </li>
+                                    <li><input type="radio" id="PlusTotinexperimente" name="Reparation"
+                                               value="PlusTotinexperimente">
+                                        <label for="PlusTotinexperimente" class="filter-label">Plutôt inexpérimenté(e)</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li><input type="radio" id="BonNiveau" name="Reparation" value="BonNiveau">
+                                        <label for="BonNiveau" class="filter-label">D’un bon niveau</label>
+                                    </li>
+                                    <li><input type="radio" id="Expert" name="Reparation" value="Expert">
+                                        <label for="Expert" class="filter-label">Expert(e)</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.creatests.com/questionnaires/apercu/index.php?N=1796&apercu=1"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Quel système d'exploitation utilisez-vous principalement ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li><input type="radio" id="Windows" name="Systeme" value="Windows" required>
+                                        <label for="Windows" class="filter-label">Windows</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Linux" name="Systeme" value="Linux">
+                                        <label for="Linux" class="filter-label">Linux</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="MacOS" name="Systeme" value="MacOS">
+                                        <label for="MacOS" class="filter-label">Mac OS</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Autre1" name="Systeme" value="Autre1">
+                                        <label for="Autre1" class="filter-label">Autre</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                    </div>
+                    <div class="formulaire">
+                        <h2>Questions 6 à 10</h2>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Si demain, un service de maintenance informatique à domicile s'implante dans
+                                votre
+                                ville, seriez-vous intéressé ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="Oui" name="Bool" value="Oui" required>
+                                        <label for="Oui" class="filter-label">Oui</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="Non" name="Bool" value="Non">
+                                        <label for="Non" class="filter-label">Non</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Quel serait le critère de choix principal de cette entreprise ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="Rapport" name="Critere" value="Rapport" required>
+                                    <label for="Rapport" class="filter-label">Rapport qualité du service</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Tarification" name="Critere" value="Tarification">
+                                    <label for="Tarification" class="filter-label">Tarification</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Comptetence" name="Critere" value="Comptetence">
+                                    <label for="Comptetence" class="filter-label">Compétence des techniciens</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Ecoute" name="Critere" value="Ecoute">
+                                    <label for="Ecoute" class="filter-label">&#202;tre à l'écoute de vos besoins</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Qualite" name="Critere" value="Qualite">
+                                    <label for="Qualite" class="filter-label">Qualité relationelle</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Autre2" name="Critere" value="Autre2">
+                                    <label for="Autre2" class="filter-label">Autre</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Quel est votre moyen de recherche principal pour trouver cette entreprise ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li><input type="radio" id="Jaune" name="Recherche" value="Jaune" required>
+                                        <label for="Jaune" class="filter-label">Les pages jaunes</label>
+                                    </li>
+                                    <li><input type="radio" id="Oreille" name="Recherche" value="Oreille">
+                                        <label for="Oreille" class="filter-label">Le bouche à oreille</label>
+                                    </li>
+                                    <li><input type="radio" id="Internet" name="Recherche" value="Internet">
+                                        <label for="Internet" class="filter-label">Internet</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li><input type="radio" id="Publicite" name="Recherche" value="Publicite">
+                                        <label for="Publicite" class="filter-label">Publicité courriers</label>
+                                    </li>
+                                    <li><input type="radio" id="Journaux" name="Recherche" value="Journaux">
+                                        <label for="Journaux" class="filter-label">Dans les journaux</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Autre3" name="Recherche" value="Autre3">
+                                        <label for="Autre3" class="filter-label">Autre</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Par quel type de prestation seriez-vous principalement intéressé ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <ul>
+                                <li><input type="radio" id="Reparation" name="Prestation" value="Reparation" required>
+                                    <label for="Reparation" class="filter-label">Réparation de l'ordinateur</label>
+                                </li>
+                                <li><input type="radio" id="Entretien" name="Prestation" value="Entretien">
+                                    <label for="Entretien" class="filter-label">Entretien mensuelle de votre PC</label>
+                                </li>
+                                <li><input type="radio" id="Montage" name="Prestation" value="Montage">
+                                    <label for="Montage" class="filter-label">Montage PC</label>
+                                </li>
+                                <li><input type="radio" id="Branchement-configuration" name="Prestation"
+                                           value="Branchement-configuration">
+                                    <label for="Branchement-configuration" class="filter-label"> Branchement + configuration internet
+                                        box</label>
+                                </li>
+                                <li><input type="radio" id="Logiciel" name="Prestation" value="Logiciel">
+                                    <label for="Logiciel" class="filter-label">Installation de logiciel</label>
+                                </li>
+                                <li><input type="radio" id="Pret" name="Prestation" value="Pret">
+                                    <label for="Pret" class="filter-label">Prêt d'un ordinateur en cas de panne importante</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                        <hr>
+                        <fieldset class="f1">
+                            <legend>Quel serait la tarification horaire, la plus juste, d'une intervention à votre
+                                domicile ?
+                                <abbr title="Réponse Obligatoire">*</abbr>
+                            </legend>
+                            <div class="left">
+                                <ul>
+                                    <li><input type="radio" id="prix1" name="prix" value="prix1" required>
+                                        <label for="prix1" class="filter-label">20 - 49 €</label>
+                                    </li>
+                                    <li><input type="radio" id="prix2" name="prix" value="prix2">
+                                        <label for="prix2" class="filter-label">50 - 79 €</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li><input type="radio" id="prix3" name="prix" value="prix3">
+                                        <label for="prix3" class="filter-label">80 - 99 €</label>
+                                    </li>
+                                    <li><input type="radio" id="prix4" name="prix" value="prix4">
+                                        <label for="prix4" class="filter-label">100 € et plus</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <p><cite><a href="https://www.askabox.fr/liste-55850-TT52TPA9IC4.html"
+                                    target="_blank">Source</a></cite></p>
+                    </div>
+                    <div class="formulaire">
+                        <button type="submit">Soumettre</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p><a href="mailto:baptiste&period;lacroix&commat;etu&period;unice&period;fr">Lacroix Baptiste</a></p>
+            <p><a href="mailto:thomas&period;gorisse&commat;etu&period;unice&period;fr">Gorisse Thomas</a></p>
+            <p>6/01/2022</p>
+
+        </footer>
+    </div>
+</main>
+</body>
+
+</html>
