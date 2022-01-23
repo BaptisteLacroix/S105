@@ -120,6 +120,7 @@ input[type=tel],
 input[type=number],
 input[type=date],
 textarea {
+    max-width: 100%;
     border: hidden;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -305,6 +306,15 @@ footer {
 
 @media screen and (max-width: 425px) {
 
+    .formulaire {
+        padding: 0;
+        margin: 0 0 10%;
+    }
+
+    .formulaire:nth-child(2) {
+        padding: 0;
+    }
+
     #logo {
         display: none;
     }
@@ -318,16 +328,19 @@ footer {
     }
 
     h1 {
-        font-weight: 100;
+        font-size: 20px;
+        font-weight: bolder;
     }
 
     h2 {
-        font-weight: 200;
+        font-size: 15px;
+        font-weight: bolder;
     }
 
     fieldset.f2 {
         max-width: 40%;
         margin: auto;
+        padding: 0;
     }
 
     input[type=text],
@@ -337,7 +350,7 @@ footer {
     input[type=number],
     input[type=date],
     textarea {
-        width: 100%;
+        width: 70%;
     }
 
     .filter-label {
@@ -347,6 +360,34 @@ footer {
         margin: 5px;
         text-align: center;
         cursor: pointer;
+    }
+
+    fieldset.f2 > div > label {
+        margin-top: 10%;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+    fieldset.f1 > legend {
+        font-size: 15px;
+    }
+
+    input[type=radio]:checked + label, input[type=checkbox]:checked + label{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    li > input[type=radio]:not(:checked) + label, li > input[type=checkbox]:not(:checked) + label{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    button {
+        max-width: 100%;
     }
 }
 
